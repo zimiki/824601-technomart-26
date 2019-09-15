@@ -49,8 +49,9 @@
         </ul>
 
         <h1 class="catalog-name">Перфораторы</h1>
-        <aside class="catalog-filtres">
-            <form method="post" action="https://echo.htmlacademy.ru">
+        <section class="catalog-filtres">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form method="get" action="https://echo.htmlacademy.ru">
                 <!--Здесь будет блок фильтра с бегунком цены-->
                 <fieldset>
                     <legend>Производители:</legend>
@@ -93,7 +94,7 @@
                 </fieldset>
                 <button type="submit">Показать</button>
             </form>
-        </aside>
+        </section>
 
         <div class="catalog-sort">
             <h2>Сортировка:</h2>
@@ -101,6 +102,7 @@
         </div>
 
         <section class="catalog">
+            <h2 class="visually-hidden">Список товаров</h2>
             <ul class="catalog-list">
                 <li class="catalog-list-item">
                     <h3 class="product-name">Перфоратор BOSH BFG 3000</h3>
