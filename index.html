@@ -11,8 +11,8 @@
     <div>
       <a class="logo btn" href="index.html"><img src="img/icon/logo-technomart.svg"
           alt="Логотип магазина Техномарт"></a>
-      <form>
-        <label for="search">Поиск</label>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <label for="search">Поиск:</label>
         <input id="search" type="text" name="search">
         <button type="submit">Искать</button>
       </form>
@@ -46,31 +46,45 @@
     <h1 class="visually-hidden">Магазин "Техномарт"</h1>
     <section>
       <h2 class="visually-hidden">Промо-блок</h2>
-      <h3>Материалы</h3>
-      <a href="#">На любой вкус</a>
-      <h3>Инструмент</h3>
-      <a href="catalog.html">На все случаи</a>
-      <h3>Техника</h3>
-      <a href="#">Для стройки</a>
+      <ul>
+        <li>
+          <h3>Материалы</h3>
+          <a href="#">На любой вкус</a>
+        </li>
+        <li>
+          <h3>Инструмент</h3>
+          <a href="catalog.html">На все случаи</a>
+        </li>
+        <li>
+          <h3>Техника</h3>
+          <a href="#">Для стройки</a>
+        </li>
+      </ul>
 
       <div class="slider">
         <div class="slide-drill">
           <h2>Дрели</h2>
           <p>Соседям на радость!</p>
         </div>
-        <div class="visually-hidden slide-perforator">
+        <div class="slide-perforator">
           <h2>Перфораторы</h2>
           <p>Настоящие мужские игрушки</p>
         </div>
-        <button type="button">следующий</button>
-        <button type="button">предыдущий</button>
+        <button type="button">Назад</button>
+        <button type="button">Вперед</button>
         <a href="catalog.html">Открыть каталог</a>
       </div>
 
-      <h3>Скидки 50%:</h3>
-      <a href="#">На 350 товаров</a>
-      <h3>Доставка</h3>
-      <a href="#">Бесплатно</a>
+      <ul>
+        <li>
+          <h3>Скидки 50%:</h3>
+          <a href="#">На 350 товаров</a>
+        </li>
+        <li>
+          <h3>Доставка</h3>
+          <a href="#">Бесплатно</a>
+        </li>
+      </ul>
     </section>
 
     <section class="catalog">
@@ -140,36 +154,51 @@
       <h2>Сервисы</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
         покупки приятными.</p>
-      <ul class="services-list">
-        <li>Доставка</li>
-        <li>Гарантия</li>
-        <li>Кредит</li>
-      </ul>
-      <div>
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо <br>
-          к Вашему подъезду совершенно бесплатно! <br>
-          Ведь мы неплохо заработаем,<br>
-          поднимая его на ваш этаж!
-        </p>
-      </div>
-      <div class="visually-hidden">
-        <h3>Гарантия</h3>
-        <p>Если купленный у нас товар поломается или заискрит, <br>
-          а также в случае пожара, спровоцированного его возгоранием,
-          вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-          сгоревший товар на новый.<br>
-          Дом уж восстановите как-нибудь сами.
-        </p>
-      </div>
-      <div class="visually-hidden">
-        <h3>Кредит</h3>
-        <p> Залезть в долговую яму стало проще!
-          Кредитные консультанты придут вам на помощь.
-        </p>
-        <a href="#">Отправить заявку</a>
-      </div>
 
+      <ul>
+        <li>
+          <label>
+            <input type="radio" name="service" value="delivery" checked>Доставка
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="service" value="guarantee">Гарантия
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="service" value="credit">Кредит
+          </label>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо <br>
+            к Вашему подъезду совершенно бесплатно! <br>
+            Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!
+          </p>
+        </li>
+        <li>
+          <h3>Гарантия</h3>
+          <p>Если купленный у нас товар поломается или заискрит, <br>
+            а также в случае пожара, спровоцированного его возгоранием,
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+            сгоревший товар на новый.<br>
+            Дом уж восстановите как-нибудь сами.
+          </p>
+        </li>
+        <li>
+          <h3>Кредит</h3>
+          <p> Залезть в долговую яму стало проще!
+            Кредитные консультанты придут вам на помощь.
+          </p>
+          <a href="#">Отправить заявку</a>
+        </li>
+      </ul>
     </section>
 
     <section class="company">
@@ -189,7 +218,7 @@
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
       <img src="img/map.png" width="300" height="158"
         alt="Техномарт по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <button type="button">Заблудились? Напишите нам</button>
+      <a href="#">Заблудились? Напишите нам</a>
     </section>
   </main>
 
