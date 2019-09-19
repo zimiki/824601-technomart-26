@@ -7,24 +7,23 @@ body {
     font-weight: 400;
     color: #000000;
     background-color: #ffffff;    
- }
+}
 
 a {
     text-decoration: none;
 }
 
-header {
+.reset-list {
+    list-style: none;
+}
+
+.index-header {
     background-color: #f4f7f9; 
 }
 
-.inner-page header {
+.inner-lighter {
     background-color: #f2f6f8; 
 }
-
-.inner-page article {
-    background-color: #f2f6f8; 
-}
-
 
 .visually-hidden {
     position: absolute;
@@ -38,7 +37,8 @@ header {
     }
 
 .button {
-    font: inherit;
+    font: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;   
     text-align: center;
@@ -105,7 +105,7 @@ header {
     background-color: #161d29; 
 }
 
-.search-form input:focus{
+.search-form input:focus {
     color: #000000;
     background-color: #ffffff;
 }
@@ -118,12 +118,12 @@ header {
     background-color: #63a63e;
 }
 
-a.order:hover,
-a.order:focus {
+.order:hover,
+.order:focus {
   background-color: #5fbb2d;  
 }
 
-a.order:active {
+.order:active {
     color: #b6c8ae;
     background-color: #518534
 }
@@ -141,7 +141,7 @@ a.order:active {
     color: #ee3643;   
 }
 
-.address{
+.address {
     color: #32425c;
 }
 
@@ -161,7 +161,7 @@ a.order:active {
     color: #b2b2b2;
 }
 
-.user-info a{
+.user-info a {
     font-size: 16px;
     line-height: 18px;
     color: #32425c;
@@ -169,8 +169,7 @@ a.order:active {
     background-color: transparent;
 }
 
-.nav-list{
-    list-style: none; 
+.nav-list {
     background-color: #32425c; 
 }
 
@@ -181,7 +180,7 @@ a.order:active {
 }
 
 .nav-item a:hover,
-.nav-item a:focus{
+.nav-item a:focus {
     background-color: #293449;
 }
 
@@ -195,15 +194,6 @@ a.order:active {
     line-height: 30px;  
     color: #32425c;
     text-transform: uppercase;
-}
-
-.title-lighter {
-    background-color: #f2f6f8;  
-}
-
-.promo-top,
-.promo-right {
-    list-style: none;
 }
 
 .promo {
@@ -223,7 +213,7 @@ a.order:active {
 .promo-button:hover, 
 .promo-button:focus {
     background-color: rgba(255, 255, 255, 0.2)
- }
+}
 
  .promo-button:active {
     background-color: rgba(255, 255, 255, 0.3)
@@ -243,7 +233,6 @@ a.order:active {
 
 .catalog-list {
     font-family: "PT Sans", Arial, sans-serif; 
-    list-style: none;
     font-size: 17px;
     line-height: 18px; 
     font-weight: 700;
@@ -277,7 +266,6 @@ a.order:active {
 }
 
 .buy{
-    font-family: "Cuprum", Arial, sans-serif;
     padding-bottom: 8px;
     padding-left: 48px;
     padding-right: 44px;
@@ -288,7 +276,7 @@ a.order:active {
 .buy:hover, 
 .buy:focus {
      background-color: #5fbb2d;
- }
+}
 
 .buy:active {
     background-color: #518534;
@@ -315,11 +303,6 @@ a.order:active {
 .bookmark:active {
     color: #d0d2d6;
     border-color: #c1c6ce;    
-}
-
-
-.brands-list {
-    list-style: none;
 }
 
 
@@ -350,14 +333,6 @@ a.order:active {
     background-color: #f4f7f9;
 }
   
-.services-list {
-    list-style: none;
-}
-
-.services-description {
-    list-style: none;
-}
-
 .services-description h3 {
     font-size: 36px;
     line-height: 36px;   
@@ -371,10 +346,6 @@ a.order:active {
     padding-right: 45px;
 }
 
-.delivery-list{
-    list-style: none;
-}
-
 .delivery-list li {
     font-size: 18px;
     line-height: 20px;   
@@ -385,12 +356,6 @@ a.order:active {
     line-height: 24px;  
     color: #ffffff;
     background-color: #32425c;
-}
-
-.footer-site-nav,
-.footer-promo,
-.social-list {
-    list-style: none;
 }
 
 .footer-site-nav a {
@@ -408,12 +373,12 @@ footer a:hover {
 .footer-site-nav a:active {
     color: #a4abb4;
     text-decoration: none;
- }
+}
  
  .footer-promo a:active {
      color: #ad956f;
      text-decoration: none;
- }
+}
 
 .footer-bottom {
     font-size: 16px;
@@ -437,7 +402,7 @@ footer a:hover {
     font: inherit;  
     background-color: transparent;
     border: 2px solid #dee3e4;
-  }
+}
   
 .feedback-item label {
     font-size: 18px;
@@ -451,22 +416,20 @@ footer a:hover {
 }
 
 .breadcrumbs {
-    list-style: none;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;  
-    text-transform: uppercase;
-     
+    text-transform: uppercase;     
 }
 
 .breadcrumbs a {
     color: #000000;   
-  }
+}
   
   .breadcrumbs a:hover,
   .breadcrumbs a:focus {
     text-decoration: underline;
-  }
+}
   
 .filter {
     font-family: "PT Sans", Arial, sans-serif;
@@ -487,27 +450,23 @@ footer a:hover {
 
 .filter fieldset {
       border: 0;
-  }
+}
 
 .filter legend{
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;   
-  }
+}
 
-  .filter ul {
-    list-style: none;
-  }
-  
-  .filter-button {
+.filter-button {
       font: inherit;
       text-transform: uppercase;
       background-color: transparent;
       border: 2px solid #e5e5e5;      
       border-radius: 3px;
-  }
+}
 
-  .filter-lighter {
+.filter-lighter {
       background-color: #f7f3ec;
       border-radius: 3px;
-  }
+}
