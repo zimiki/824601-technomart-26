@@ -46,8 +46,7 @@ img {
 
 .page-header {
     background-color: #f4f7f9;    
-    padding-bottom: 60px;
-    margin-bottom: 59px;
+    padding-bottom: 60px;    
 }
 
 .inner-lighter {
@@ -293,13 +292,20 @@ img {
 
 .user-block {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     width: 300px;
     margin-left: auto;
-    padding-left: 20px;
 }
 
-.user-block a {
+
+.account {
+    display: flex;
+    
+}
+
+.login,
+.registration,
+.user-name {
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -310,11 +316,29 @@ img {
     padding-left: 23px; 
 }
 
+.user-name {
+    flex-grow: 1;
+    padding-right: 0;
+    padding-left: 47px;
+    background-image: url("../img/icon/icon-user.svg");
+    background-position: 14px 13px;
+    background-repeat: no-repeat;   
+}
+
+.user-name:hover {
+    background-image: url("../img/icon/icon-user-hover.svg");
+}
+
+.user-name:active {
+    background-image: url("../img/icon/icon-user.svg");
+}
+
 .user-block .login {
     position: relative;
     padding-right: 27px;   
     padding-left: 48px;    
     margin-right: 10px;  
+    margin-left: 20px;
 }
 
 .login::before {
@@ -327,6 +351,12 @@ img {
     background-image: url("../img/icon/icon-login.svg");
 }
 
+.account-exit {
+    font-size: 0;
+    background: #ffffff url("../img/icon/icon-logout.svg") center no-repeat;
+    width: 45px;    
+}
+
 .login:hover::before {
     background-image: url("../img/icon/icon-login-hover.svg");
 }
@@ -335,6 +365,30 @@ img {
     background-image: url("../img/icon/icon-login.svg");
 }
 
+.account-exit:hover {
+    background-image: url("../img/icon/icon-logout-hover.svg");
+}
+
+.account-exit:active {
+    background-image: url("../img/icon/icon-logout.svg");
+}
+
+.account-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7px;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.account-info a {   
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    text-decoration: underline;
+    margin-right: 32px;
+}
 
 .user-block a:hover,
 .user-block a:focus {
@@ -343,6 +397,17 @@ img {
 
 .user-block a:active {
     color: #b2b2b2;
+}
+
+.account-info a:first-child::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #32425c;
+    border-radius: 50%;
+    top: 7px;
+    right: -20px;
 }
 
 
@@ -407,22 +472,29 @@ img {
 .page-title {
     font-size: 30px;
     line-height: 30px;  
+    font-weight: 400;
     color: #32425c;
     text-transform: uppercase;
+    padding-top: 30px;
+    padding-right: 27px;
+    padding-bottom: 27px;
+    padding-left: 27px; 
+    margin: 0;   
+    margin-bottom: 20px;
 }
 
 .promo {    
     font-size: 18px;    
     line-height: 24px;
     color: #ffffff;
+    margin-top: 59px;
     margin-bottom: 53px;
 }
 
 .promo-item {
     position: relative;
     width: 300px;
-    height: 123px;
-    background-color: green;
+    height: 123px;    
     padding-top: 21px;
     padding-bottom: 22px;    
 }
@@ -583,7 +655,7 @@ img {
     min-height: 318px;
     border: 1px solid #eaeaea;
     margin-right: 20px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -1125,8 +1197,8 @@ footer a:hover {
     font-size: 13px;
     line-height: 18px;  
     text-transform: uppercase;
-    margin-top: 25px;
-    margin-bottom: 25px;     
+    margin-top: 20px;
+    margin-bottom: 20px;     
 }
 
 .breadcrumbs-item {
@@ -1153,6 +1225,10 @@ footer a:hover {
     display: flex;
     flex-direction: column;    
 }
+
+.catalog-sort {
+  
+}
   
 .filter {
     display: flex;
@@ -1170,8 +1246,14 @@ footer a:hover {
     line-height: 18px; 
     font-weight: 400;
     text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 10px;   
+    padding-top: 12px;
+    padding-right: 19px;
+    padding-bottom: 9px;  
+    padding-left: 19px;
+    background-color: #f7f3ec;     
+    border-radius: 3px;
+    margin: 0;
+    margin-bottom: 21px;
 }
 
 .filter fieldset {
@@ -1192,33 +1274,57 @@ footer a:hover {
       border-radius: 3px;
 }
 
-.filter-title {
-      background-color: #f7f3ec;
-      border-radius: 3px;
-}
+
 
 .catalog-paginator {
     display: flex;
     align-items: flex-start;
-    margin-top: 52px;  
+    flex-wrap: wrap;
+    margin-top: 32px;  
     margin-bottom: 60px;  
 }
 
-.catalog-paginator li {
-    width: 38px;
-    height: 38px;
+.catalog-paginator a {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-size: 13px;
+    line-height: 18px; 
+    text-transform: uppercase;
+    padding-top: 9px;
+    padding-right: 14px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    color: #000000;
     border: 1px solid #e5e5e5;
     margin-right: 10px;
 }
 
-.pagination-current {
+.catalog-paginator .pagination-current {
+    color: #ffffff;
     background-color: #ee3643;
 }
 
-.article {
-    padding-top: 67px;
-    padding-bottom: 73px;
+.catalog-paginator .pagination-next {
+    padding-right: 32px;
+    padding-left: 32px;
+}
 
+.article {
+    padding-top: 65px;
+    padding-right: 130px;
+    padding-bottom: 69px;
+    padding-left: 130px;
+}
+
+.article h2 {
+    margin-bottom: 26px;
+}
+
+.article p {
+    font-family: "PT Sans", Arial, sans-serif;     
+    margin: 0;
 }
 
 .popup-add-cart { 
