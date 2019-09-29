@@ -1272,12 +1272,21 @@ footer a:hover {
     color: #000000;   
 }
 
-.home {  
+.home { 
+    position: relative; 
     font-size: 0;
-    padding-right: 55px;  
+    padding-right: 53px;    
+}
+
+
+.home::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    top: 2px;
+    left: -1px;    
     background-image: url('../img/icon/icon-home.svg');
-    background-repeat: no-repeat;
-    background-position: 0px 1px;    
 }
  
   .breadcrumbs a:hover,
@@ -1285,11 +1294,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.home:hover {
+.home:hover::before {
     background-image: url('../img/icon/icon-home-hover.svg');
 }
 
-.home:active {
+.home:active::before  {
     background-image: url('../img/icon/icon-home.svg');
 }
 
