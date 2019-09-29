@@ -695,14 +695,17 @@ img {
     font-size: 18px;
     line-height: 20px;      
     color: #000000;    
-    margin: 9px 25px 10px 25px;    
+    margin: 9px auto 10px auto;    
 }
 
 
 .product-name  a {
+    width: 190px;
     display: inline-block;
     vertical-align: top;
-    text-align: center;   
+    text-align: center;
+
+  
     color: #000000;        
 }
 
@@ -944,7 +947,7 @@ img {
 .company {
     display: flex;
     justify-content: space-between;
-    padding-top: 82px;
+    padding-top: 58px;
     padding-bottom: 86px;
 }
 
@@ -960,6 +963,7 @@ img {
 }
 
 .company p {
+    width: 100%;
     font-family: "PT Sans", Arial, sans-serif;
     margin-top: 0;
     margin-bottom: 23px; 
@@ -1658,7 +1662,7 @@ fieldset .filter-name::before {
 
 .big-map {
     height: 100%;   
-    background-image: url("../img/big-map.png");
+    background-image: url("../img/big-map.jpg");
     background-repeat: no-repeat;
     background-position: -130px -255px;
 }
@@ -1669,7 +1673,7 @@ fieldset .filter-name::before {
     height: 21px;
     font-size: 0;
     background-image: url("../img/icon/icon-close.svg");
-    background-color: inherit;    
+    background-color: transparent;
     top: 8px;
     right: 9px;
     border: 0;
