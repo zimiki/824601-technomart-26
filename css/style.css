@@ -1478,6 +1478,15 @@ fieldset .filter-name::before {
     margin-top: 33px;
 }
 
+.filter-button:hover,
+.filter-button:focus {    
+    border: 2px solid #bdc6ca;
+}
+
+.filter-button:active {
+    border: 2px solid #ee3643;
+}
+
 .catalog-sort {
     display: flex;    
 }
