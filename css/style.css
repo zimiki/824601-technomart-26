@@ -1466,6 +1466,18 @@ fieldset .filter-name::before {
     outline: 5px auto -webkit-focus-ring-color;    
 }
 
+.filter-button {
+    font: inherit;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #e5e5e5;   
+    border-radius: 3px;
+    padding: 9px 38px 9px 38px;
+    margin-top: 33px;
+}
+
 .catalog-sort {
     display: flex;    
 }
