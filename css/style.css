@@ -1089,7 +1089,7 @@ img {
 }
 
 footer a:hover {
-    text-decoration: underline;  /*   вопрос: Анна, это  border-bottom  ?  */
+    text-decoration: underline; 
 }
 
 .footer-site-nav a:active {
