@@ -1458,9 +1458,8 @@ fieldset .filter-name::before {
       opacity: 0.3;
 }
 
-
-/* вопрос: так нельзя или я что-то не так опредедила ,*/
-.brand-checkbox:focus + label > .checkbox-indicator { 
+.brand-checkbox:focus + label::before,
+.powered-radio:focus + label::before { 
     border-color: red;   
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;    
@@ -1482,6 +1481,7 @@ fieldset .filter-name::before {
 .filter-button:focus {    
     border: 2px solid #bdc6ca;
 }
+
 
 .filter-button:active {
     border: 2px solid #ee3643;
