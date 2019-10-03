@@ -77,19 +77,33 @@
       </ul>
 
       <div class="promo-wrapper">
-        <div class="slider slide-1">
-          <div class="slider-scroll">
-            <button class="scroll-button back" type="button">Назад</button>
-            <button class="scroll-button next" type="button">Вперед</button>
+        <div class="slider-wrapper">
+          <input class="visually-hidden" type="radio" id="promo-1" name="toggle">
+          <input class="visually-hidden" type="radio" id="promo-2" name="toggle"checked>
+          <div class="slider-controls">
+            <label for="promo-1">Первый</label>
+            <label for="promo-2">Второй</label>
+          </div>
+          <ul class="slider-list reset-list">           
+            <li class="slider-item" id="slide-1">
+                <div class="slider-content">
+              <h3 class="slide-title">Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>              
+            </div>
+            </li>
+            <li class="slider-item" id="slide-2">
+                <div class="slider-content">
+                  <h3 class="slide-title">Дрели</h3>
+                  <p>Соседям на радость!</p>                
+                </div>
+              </li>
+          </ul>
+          <div class="scroll-button">
+            <a class="back" href="#">Назад</a>
+            <a class="next" href="#">Вперед</a>
           </div>
           <a class="button" href="catalog.html">Открыть каталог</a>
-          <div class="slider-paginator">
-            <div class="slider-dot active-dot">1</div>
-            <div class="slider-dot">2</div>
-          </div>
         </div>
-
-
 
         <ul class="promo-right-list reset-list">
           <li class="promo-item sale">
@@ -339,14 +353,15 @@
       </div>
     </form>
     <button class="close" type="button">
-        <span class="visually-hidden">Закрыть</span>
+      <span class="visually-hidden">Закрыть</span>
     </button>
 
   </section>
 
   <div class="popup popup-map">
     <h2 class="visually-hidden">Как до нас добраться:</h2>
-    <img src="img/big-map.jpg" width="940" height="446" alt="Техномарт по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <img src="img/big-map.jpg" width="940" height="446"
+      alt="Техномарт по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
     <button class="close" type="button">
       <span class="visually-hidden">Закрыть</span>
     </button>
