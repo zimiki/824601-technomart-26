@@ -963,7 +963,8 @@ img {
     background: url("../img/service-border.png") no-repeat;    
 }
 
-.services-item {
+.services-list label{
+    display: block;
     padding-top: 17px;
     padding-bottom: 15px;
     padding-left: 23px;
@@ -971,18 +972,14 @@ img {
     box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;   
 }
 
-.current-service {
-    color: #32425c;
-    background-color: #ffffff;
-    box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+.services-item  label:hover {
+    background-color: #293449;
 }
 
-.about-service-list {
-    width: 620px;  
-}
-
-.about-service-list li {
-    padding-bottom: 117px; 
+.about-service-item {    
+    display: none;    
+    width: 620px;
+    min-height: 286px;
 }
   
 .delivery-type {
@@ -1007,7 +1004,6 @@ img {
     margin-bottom: 24px;
 }
 
-
 .about-service p {
     width: 380px;
     font-family: "PT Sans", Arial, sans-serif;
@@ -1015,16 +1011,41 @@ img {
     padding-bottom: 34px;   
 }
 
-.about-service .button{
+.about-service-item .button {
+    display: inline-block;
+    vertical-align: top;
     background-color: #ff5357;
     padding-left: 45px;
     padding-right: 45px;
+    margin-top: 14px;
 }
+
+#service-1:checked ~ .services-list label[for="service-1"],
+#service-2:checked ~ .services-list label[for="service-2"],
+#service-3:checked ~ .services-list label[for="service-3"] {
+    color: #32425c;
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+}
+
+
+#service-1:checked ~ .about-service-list #about-delivery,
+#service-2:checked ~ .about-service-list #about-guarantee,
+#service-3:checked ~ .about-service-list #about-credit {
+  display: block;
+}
+
+
+
+
+
+
+
 
 .company {
     display: flex;
     justify-content: space-between;
-    padding-top: 58px;
+    padding-top: 80px;
     padding-bottom: 86px;
 }
 

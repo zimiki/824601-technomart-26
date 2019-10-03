@@ -79,24 +79,24 @@
       <div class="promo-wrapper">
         <div class="slider-wrapper">
           <input class="visually-hidden" type="radio" id="promo-1" name="toggle">
-          <input class="visually-hidden" type="radio" id="promo-2" name="toggle"checked>
+          <input class="visually-hidden" type="radio" id="promo-2" name="toggle" checked>
           <div class="slider-controls">
             <label for="promo-1">Первый</label>
             <label for="promo-2">Второй</label>
           </div>
-          <ul class="slider-list reset-list">           
+          <ul class="slider-list reset-list">
             <li class="slider-item" id="slide-1">
-                <div class="slider-content">
-              <h3 class="slide-title">Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>              
-            </div>
+              <div class="slider-content">
+                <h3 class="slide-title">Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+              </div>
             </li>
             <li class="slider-item" id="slide-2">
-                <div class="slider-content">
-                  <h3 class="slide-title">Дрели</h3>
-                  <p>Соседям на радость!</p>                
-                </div>
-              </li>
+              <div class="slider-content">
+                <h3 class="slide-title">Дрели</h3>
+                <p>Соседям на радость!</p>
+              </div>
+            </li>
           </ul>
           <div class="scroll-button">
             <a class="back" href="#">Назад</a>
@@ -208,23 +208,23 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <div class="services-wrapper">
+          <input class="services-item visually-hidden" type="radio" name="service" value="delivery" id="service-1" checked>
+          <input class="services-item visually-hidden" type="radio" name="service" value="guarantee" id="service-2">
+          <input class="services-item visually-hidden" type="radio" name="service" value="credit" id="service-3">
           <ul class="services-list reset-list">
-            <li class="services-item current-service">
-              <input class="visually-hidden" type="radio" name="service" value="delivery" id="delivery-service" checked>
-              <label for="delivery-service">Доставка</label>
+            <li>          
+              <label for="service-1">Доставка</label>
             </li>
-            <li class="services-item">
-              <input class="visually-hidden" type="radio" name="service" value="guarantee" id="guarantee-service">
-              <label for="guarantee-service">Гарантия</label>
+            <li>              
+              <label for="service-2">Гарантия</label>
             </li>
-            <li class="services-item">
-              <input class="visually-hidden" type="radio" name="service" value="credit" id="credit-service">
-              <label for="credit-service">Кредит</label>
+            <li>              
+              <label for="service-3">Кредит</label>
             </li>
           </ul>
 
           <ul class="about-service-list reset-list">
-            <li class="about-service delivery-type">
+            <li class="about-service-item delivery-type" id="about-delivery">
               <h3 class="heading service-name">Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо<br>
                 к Вашему подъезду совершенно бесплатно!<br>
@@ -232,7 +232,7 @@
                 поднимая его на ваш этаж!
               </p>
             </li>
-            <li class="about-service guarantee-type visually-hidden">
+            <li class="about-service-item guarantee-type" id="about-guarantee">
               <h3 class="heading service-name">Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит,<br>
                 а также в случае пожара, спровоцированного его возгоранием,<br>
@@ -241,7 +241,7 @@
                 Дом уж восстановите как-нибудь сами.
               </p>
             </li>
-            <li class="about-service credit-type visually-hidden">
+            <li class="about-service-item credit-type" id="about-credit">
               <h3 class="heading service-name">Кредит</h3>
               <p> Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.
