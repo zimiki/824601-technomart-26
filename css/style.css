@@ -1,4 +1,3 @@
-
 *, *::after, *::before {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
@@ -1063,7 +1062,7 @@ img {
     background: url("../img/service-border.png") no-repeat;    
 }
 
-.services-list label{
+.services-list label {
     display: block;
     padding-top: 17px;
     padding-bottom: 15px;
@@ -1073,8 +1072,9 @@ img {
             box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;   
 }
 
-.services-item  label:hover {
-    background-color: #293449;
+.services-list label:hover,
+.services-list label:focus {
+    background-color: #293449; 
 }
 
 .about-service-item {    
@@ -1187,12 +1187,12 @@ img {
 .delivery-list {
     font-size: 18px;
     line-height: 20px;    
-    margin-bottom: 36px;   
+    margin-bottom: 35px;   
 }
 
 .company-contact img {
     margin-top: 9px;
-    margin-bottom: 40px;   
+    margin-bottom: 31px;   
 }
 
 .delivery-list li {
@@ -1272,7 +1272,6 @@ img {
     margin-top: 37px;
 }
 
-
 .panel-promo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1311,16 +1310,18 @@ img {
     color: #ffd180;
 }
 
-footer a:hover {
+
+.footer-panel a:hover,
+.footer-bottom a:hover {
     text-decoration: underline; 
 }
 
-.footer-site-nav a:active {
-    color: #a4abb4;
+.footer-nav-list a:active {
+    color: #a4abb4; 
     text-decoration: none;
 }
  
- .footer-promo a:active {
+ .footer-promo-list a:active {
      color: #ad956f;
      text-decoration: none;
 }
@@ -1827,7 +1828,7 @@ footer a:hover {
     fill: #231f20;
 }
 
-.sort-arrow .active-arrow path,
+.active-arrow path,
 .sort-arrow a:active path {
   fill: #ee3643;
 }
