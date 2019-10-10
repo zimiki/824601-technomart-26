@@ -2049,14 +2049,27 @@ img {
 }
 
 .popup-map {
-    display: none;    
+    display: none;  
     margin-left: -470px;  
     bottom: 357px;
     width: 940px;
-    height: 447px;
+    height: 446px;
     border: 0;      
     background-color: #565656;  
     z-index: 9;
+}
+
+.popup-map img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;    
+}
+  
+.popup-map iframe {
+    position: relative;
+    z-index: 11;  
+    border: none;
 }
 
 .close {
@@ -2069,4 +2082,49 @@ img {
     top: 8px;
     right: 9px;
     border: 0;
+    z-index: 12;   
+}
+
+.modal-show {
+    display: block;    
+    animation: bounce 0.6s;
+}
+  
+.modal-error {
+    animation: shake 0.6s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
 }
